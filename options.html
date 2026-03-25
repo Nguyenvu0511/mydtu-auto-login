@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cài đặt MyDTU Bot</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; width: 320px; background: #f9f9f9; }
+        h2 { color: #b70000; text-align: center; margin-bottom: 20px; }
+        .group { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 15px; }
+        label { display: block; margin-top: 10px; font-weight: 600; font-size: 13px; color: #333; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        /* Toggle Switch */
+        .toggle-container { display: flex; align-items: center; justify-content: space-between; margin-top: 5px; }
+        .switch { position: relative; display: inline-block; width: 50px; height: 26px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 34px; }
+        .slider:before { position: absolute; content: ""; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: #b70000; }
+        input:checked + .slider:before { transform: translateX(24px); }
+        button { width: 100%; padding: 12px; background: #b70000; color: white; border: none; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.2s; }
+        button:hover { background: #900000; }
+        #status { text-align: center; margin-top: 10px; font-size: 13px; height: 15px; }
+        .note { font-size: 11px; color: #666; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h2>⚙️ Cấu hình Auto Login</h2>
+    <div class="group">
+        <div class="toggle-container">
+            <span style="font-weight: bold;">Tự động Đăng nhập 100%</span>
+            <label class="switch">
+                <input type="checkbox" id="autoLogin">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="note">Bật: Tự làm tất cả. Tắt: Chỉ điền User/Pass.</div>
+    </div>
+    <div class="group">
+        <label>Gemini API Key (Google AI Studio):</label>
+        <input type="password" id="apiKey" placeholder="Dán API Key vào đây...">
+        <label>Tên đăng nhập (MSSV):</label>
+        <input type="text" id="username" placeholder="Ví dụ: 29211...">
+        <label>Mật khẩu:</label>
+        <input type="password" id="password" placeholder="Mật khẩu MyDTU">
+    </div>
+    <button id="saveBtn">LƯU CÀI ĐẶT</button>
+    <div id="status"></div>
+    <script src="options.js"></script>
+</body>
+</html>
