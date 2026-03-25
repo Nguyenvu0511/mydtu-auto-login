@@ -1,5 +1,3 @@
-# mydtu-auto-login
-Tiện ích mở rộng (Chrome Extension) tự động đăng nhập và giải Captcha cổng thông tin MyDTU bằng AI (Gemini).
 # 🚀 MyDTU Auto-Login Bot
 
 **MyDTU Auto-Login** là một tiện ích mở rộng (Extension) dành cho trình duyệt Chromium (Chrome, Edge, Brave...), giúp tự động hóa hoàn toàn quá trình đăng nhập vào cổng thông tin MyDTU của Đại học Duy Tân. 
